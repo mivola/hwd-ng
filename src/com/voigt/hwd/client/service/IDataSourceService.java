@@ -3,6 +3,7 @@ package com.voigt.hwd.client.service;
 import java.util.List;
 
 import com.google.gwt.user.client.rpc.RemoteService;
+import com.smartgwt.client.data.SortSpecifier;
 import com.voigt.hwd.client.admin.ds.FetchResult;
 import com.voigt.hwd.client.admin.ds.criteria.GWTCriterion;
 
@@ -17,7 +18,7 @@ public interface IDataSourceService<T> extends RemoteService {
 	public boolean deleteOneEntry(int id);
 
 	// from http://forums.smartclient.com/showthread.php?t=4814&page=5
-	public FetchResult<T> fetch(GWTCriterion criterion, String sorting, int startRow, int endRow);
+	FetchResult<T> fetch(GWTCriterion criterion, SortSpecifier[] sortSpecifiers, int startRow, int endRow);
 
 	public T add(T record);
 

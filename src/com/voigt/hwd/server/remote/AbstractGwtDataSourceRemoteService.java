@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.allen_sauer.gwt.log.client.Log;
+import com.smartgwt.client.data.SortSpecifier;
 import com.voigt.hwd.client.admin.ds.FetchResult;
 import com.voigt.hwd.client.admin.ds.criteria.GWTCriterion;
 import com.voigt.hwd.domain.IDomainObject;
@@ -14,7 +15,7 @@ import com.voigt.hwd.server.util.criteria.CriterionUtils;
 
 public abstract class AbstractGwtDataSourceRemoteService<T extends IDomainObject> extends AbstractGwtRemoteService {
 
-	public FetchResult<T> fetch(GWTCriterion criterion, String sorting, int startRow, int endRow) {
+	public FetchResult<T> fetch(GWTCriterion criterion, SortSpecifier[] sortSpecifiers, int startRow, int endRow) {
 		/*
 		 * String[] attributes = criteria.getAttributes();
 		 * Log.debug("Attributi: " + attributes); for (String attr : attributes)

@@ -6,7 +6,7 @@ import java.util.Date;
 import com.google.gwt.user.client.ui.ChangeListener;
 import com.google.gwt.user.client.ui.ChangeListenerCollection;
 import com.google.gwt.user.client.ui.Composite;
-import com.smartgwt.client.types.TimeFormatter;
+import com.smartgwt.client.types.TimeDisplayFormat;
 import com.smartgwt.client.widgets.Label;
 import com.smartgwt.client.widgets.form.DynamicForm;
 import com.smartgwt.client.widgets.form.fields.CheckboxItem;
@@ -18,8 +18,8 @@ import com.smartgwt.client.widgets.form.fields.events.ChangedEvent;
 import com.smartgwt.client.widgets.form.fields.events.ChangedHandler;
 import com.smartgwt.client.widgets.layout.HLayout;
 import com.voigt.hwd.domain.Bet;
-import com.voigt.hwd.domain.Match;
 import com.voigt.hwd.domain.Bet.BetJoker;
+import com.voigt.hwd.domain.Match;
 
 public class MatchFixture extends Composite {
 
@@ -61,7 +61,7 @@ public class MatchFixture extends Composite {
 
 		matchTime.setShowHint(false);
 		matchTime.setWidth(40);
-		matchTime.setTimeFormatter(TimeFormatter.TOSHORTPADDED24HOURTIME);
+		matchTime.setTimeFormatter24Hour(TimeDisplayFormat.TOSHORTPADDED24HOURTIME);
 		matchTime.setDisabled(true);
 
 		homeTeam.setLength(TEAM_FIELD_LENGTH);

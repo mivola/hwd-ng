@@ -12,8 +12,8 @@ import com.smartgwt.client.widgets.Label;
 import com.smartgwt.client.widgets.Window;
 import com.smartgwt.client.widgets.events.ClickEvent;
 import com.smartgwt.client.widgets.events.ClickHandler;
+import com.smartgwt.client.widgets.events.CloseClickEvent;
 import com.smartgwt.client.widgets.events.CloseClickHandler;
-import com.smartgwt.client.widgets.events.CloseClientEvent;
 import com.smartgwt.client.widgets.form.DynamicForm;
 import com.smartgwt.client.widgets.form.fields.LinkItem;
 import com.smartgwt.client.widgets.layout.HLayout;
@@ -188,7 +188,7 @@ public class HistoryOverviewWindow extends Window {
 					modalImgWindow.centerInPage();
 
 					modalImgWindow.addCloseClickHandler(new CloseClickHandler() {
-						public void onCloseClick(CloseClientEvent event) {
+						public void onCloseClick(CloseClickEvent event) {
 							modalImgWindow.destroy();
 						}
 					});

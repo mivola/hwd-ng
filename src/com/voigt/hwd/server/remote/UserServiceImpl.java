@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 import com.allen_sauer.gwt.log.client.Log;
+import com.smartgwt.client.data.SortSpecifier;
 import com.voigt.hwd.client.admin.ds.FetchResult;
 import com.voigt.hwd.client.admin.ds.criteria.GWTCriterion;
 import com.voigt.hwd.client.service.UserService;
@@ -42,8 +43,8 @@ public class UserServiceImpl extends AbstractGwtDataSourceRemoteService<User> im
 	}
 
 	@Override
-	public FetchResult<User> fetch(GWTCriterion criterion, String sorting, int startRow, int endRow) {
-		FetchResult<User> users = super.fetch(criterion, sorting, startRow, endRow);
+	public FetchResult<User> fetch(GWTCriterion criterion, SortSpecifier[] sortSpecifiers, int startRow, int endRow) {
+		FetchResult<User> users = super.fetch(criterion, sortSpecifiers, startRow, endRow);
 		for (User user : users.getFetchedList()) {
 			Log.debug("user: " + user + "; roles: " + user.getRoles());
 		}
