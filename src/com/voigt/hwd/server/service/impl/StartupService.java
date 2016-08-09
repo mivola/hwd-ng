@@ -28,7 +28,8 @@ public class StartupService implements IStartupService {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see net.sf.gilead.sample.server.service.implementation.IStartupService#isInitialized()
+	 * @see net.sf.gilead.sample.server.service.implementation.IStartupService#
+	 * isInitialized()
 	 */
 	public boolean isInitialized() {
 		return (userDao.countAll() > 0);
@@ -37,7 +38,8 @@ public class StartupService implements IStartupService {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see net.sf.gilead.sample.server.service.implementation.IStartupService#initialize()
+	 * @see net.sf.gilead.sample.server.service.implementation.IStartupService#
+	 * initialize()
 	 */
 	public void initialize() {
 		// Create guest user (no password)

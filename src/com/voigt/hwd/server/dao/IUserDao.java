@@ -6,14 +6,14 @@ import com.voigt.hwd.domain.User;
 
 public interface IUserDao extends IGenericDao<User, Serializable> {
 
-    /**
-     * Load the user with the argument login
-     */
-    public User searchUserByLogin(String login);
+	/**
+	 * Load the user with the argument login
+	 */
+	public User searchUserByLogin(String login);
 
-    /**
-     * Count all the users
-     */
-    public int countAll();
+	/**
+	 * Count all the users
+	 */
+	public int countAll();
 
 }

@@ -7,6 +7,6 @@ import java.io.Serializable;
  */
 public interface IDomainObject extends Serializable {
 
-    public int getId();
+	public int getId();
 
 }

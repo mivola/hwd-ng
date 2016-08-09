@@ -55,7 +55,8 @@ public class IdentificationService extends GenericServiceImpl<User, Serializable
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see net.sf.gilead.sample.server.service.IIdentificationService#loadUserList()
+	 * @see
+	 * net.sf.gilead.sample.server.service.IIdentificationService#loadUserList()
 	 */
 	public List<User> loadUserList() {
 		List<User> allUsers = userDao.getAll();

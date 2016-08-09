@@ -4,12 +4,12 @@ import com.google.gwt.core.client.GWT;
 
 public class HwdMessagesFactory {
 
-    private HwdMessagesFactory() {
-	// private
-    }
+	private HwdMessagesFactory() {
+		// private
+	}
 
-    public static HwdMessages getInstance() {
-	return (HwdMessages) GWT.create(HwdMessages.class);
-    }
+	public static HwdMessages getInstance() {
+		return (HwdMessages) GWT.create(HwdMessages.class);
+	}
 
 }

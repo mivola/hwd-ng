@@ -16,8 +16,8 @@ import com.voigt.hwd.server.dao.IRoleDao;
  */
 public class RoleDao extends GenericDaoHibernateImpl<Role, Serializable> implements IRoleDao {
 
-    public RoleDao() {
-	super(Role.class);
-    }
+	public RoleDao() {
+		super(Role.class);
+	}
 
 }

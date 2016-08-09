@@ -42,7 +42,9 @@ public class MatchDay implements IDomainObject {
 	@JoinColumn(nullable = false)
 	private Season season;
 
-	/* a list of matches (from all leagues) that are played during this matchday */
+	/*
+	 * a list of matches (from all leagues) that are played during this matchday
+	 */
 	@OneToMany(mappedBy = "matchDay")
 	private List<Match> matches;
 

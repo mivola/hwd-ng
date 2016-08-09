@@ -7,58 +7,58 @@ import javax.persistence.Id;
 @Entity
 public class SimplePojo implements IDomainObject {
 
-    private static final long serialVersionUID = 4414097275589674897L;
+	private static final long serialVersionUID = 4414097275589674897L;
 
-    @Id
-    @GeneratedValue
-    private int id;
+	@Id
+	@GeneratedValue
+	private int id;
 
-    private String lastName;
+	private String lastName;
 
-    private String firstName;
+	private String firstName;
 
-    private String nickName;
+	private String nickName;
 
-    private User user;
+	private User user;
 
-    public User getUser() {
-	return user;
-    }
+	public User getUser() {
+		return user;
+	}
 
-    public void setUser(User user) {
-	this.user = user;
-    }
+	public void setUser(User user) {
+		this.user = user;
+	}
 
-    public int getId() {
-	return id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public void setId(int id) {
-	this.id = id;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public String getLastName() {
-	return lastName;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    public void setLastName(String lastName) {
-	this.lastName = lastName;
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 
-    public String getFirstName() {
-	return firstName;
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public void setFirstName(String firstName) {
-	this.firstName = firstName;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    public String getNickName() {
-	return nickName;
-    }
+	public String getNickName() {
+		return nickName;
+	}
 
-    public void setNickName(String nickName) {
-	this.nickName = nickName;
-    }
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
 
 }

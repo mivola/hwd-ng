@@ -14,5 +14,5 @@ import com.google.gwt.user.client.rpc.RemoteService;
  */
 
 public interface StringReverserService extends RemoteService {
-  public String reverseString(String stringToReverse);
+	public String reverseString(String stringToReverse);
 }

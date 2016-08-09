@@ -57,8 +57,8 @@ public class HwdItemRecord extends ListGridRecord {
 		final int secondPlaceFactor = 2;
 		final int thirdPlaceFactor = 1;
 
-		int sum = firstPlaceFactor * cntFirstPlace + secondPlaceFactor * cntSecondPlace + thirdPlaceFactor
-				* cntThirdPlace;
+		int sum = firstPlaceFactor * cntFirstPlace + secondPlaceFactor * cntSecondPlace
+				+ thirdPlaceFactor * cntThirdPlace;
 		setAttribute(CNT_ALL_TIME_POINTS_FIELD, sum);
 
 	}

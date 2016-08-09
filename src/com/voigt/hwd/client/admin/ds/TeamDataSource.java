@@ -12,50 +12,50 @@ import com.voigt.hwd.client.service.TeamServiceAsync;
 import com.voigt.hwd.domain.Team;
 
 public class TeamDataSource extends DataSource {
-    protected static final String NAME = "name";
-    protected static final String ABBREVIATION = "abbreviaton";
-    protected static final String OL_ID = "OLId";
+	protected static final String NAME = "name";
+	protected static final String ABBREVIATION = "abbreviaton";
+	protected static final String OL_ID = "OLId";
 
-    public TeamDataSource() {
-	// setID("teamDataSource");
+	public TeamDataSource() {
+		// setID("teamDataSource");
 
-	DataSourceTextField id = new DataSourceTextField(IDataSourceManager.ID_FIELD, "ID");
-	DataSourceTextField name = new DataSourceTextField(NAME, "Name");
-	DataSourceTextField abbreviation = new DataSourceTextField(ABBREVIATION, "Abkürzung");
-	DataSourceTextField openLigaId = new DataSourceTextField(OL_ID, "OpenLiga-ID");
-	id.setHidden(true);
-	id.setPrimaryKey(true);
+		DataSourceTextField id = new DataSourceTextField(IDataSourceManager.ID_FIELD, "ID");
+		DataSourceTextField name = new DataSourceTextField(NAME, "Name");
+		DataSourceTextField abbreviation = new DataSourceTextField(ABBREVIATION, "Abkürzung");
+		DataSourceTextField openLigaId = new DataSourceTextField(OL_ID, "OpenLiga-ID");
+		id.setHidden(true);
+		id.setPrimaryKey(true);
 
-	setFields(id, name, abbreviation, openLigaId);
-	setClientOnly(true);
+		setFields(id, name, abbreviation, openLigaId);
+		setClientOnly(true);
 
-	setRecords();
+		setRecords();
 
-    }
+	}
 
-    private void setRecords() {
-	TeamServiceAsync service = TeamService.Util.getInstance();
-	service.getAllEntries(new AsyncCallback<List<Team>>() {
-	    public void onFailure(Throwable caught) {
-		Log.debug("There was an error fetching data from the server");
-	    }
+	private void setRecords() {
+		TeamServiceAsync service = TeamService.Util.getInstance();
+		service.getAllEntries(new AsyncCallback<List<Team>>() {
+			public void onFailure(Throwable caught) {
+				Log.debug("There was an error fetching data from the server");
+			}
 
-	    public void onSuccess(List<Team> teams) {
+			public void onSuccess(List<Team> teams) {
 
-		// load all users into the grid
-		for (Team team : teams) {
+				// load all users into the grid
+				for (Team team : teams) {
 
-		    ListGridRecord record = new ListGridRecord();
-		    record.setAttribute(IDataSourceManager.ID_FIELD, team.getId());
-		    record.setAttribute(NAME, team.getName());
-		    record.setAttribute(ABBREVIATION, team.getAbbreviation());
-		    record.setAttribute(OL_ID, team.getOLId());
+					ListGridRecord record = new ListGridRecord();
+					record.setAttribute(IDataSourceManager.ID_FIELD, team.getId());
+					record.setAttribute(NAME, team.getName());
+					record.setAttribute(ABBREVIATION, team.getAbbreviation());
+					record.setAttribute(OL_ID, team.getOLId());
 
-		    addData(record);
-		}
+					addData(record);
+				}
 
-	    }
+			}
 
-	});
-    }
+		});
+	}
 }

@@ -34,7 +34,7 @@ package com.voigt.hwd.client.navigation;
 import com.smartgwt.client.util.SC;
 
 public class DebugConsoleCommand implements Command {
-    public void execute() {
-	SC.showConsole();
-    }
+	public void execute() {
+		SC.showConsole();
+	}
 }

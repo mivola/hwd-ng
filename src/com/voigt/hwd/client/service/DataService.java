@@ -12,14 +12,13 @@ public interface DataService extends RemoteService {
 
 		public static DataServiceAsync getInstance() {
 
-			DataServiceAsync instance = (DataServiceAsync) GWT
-					.create(DataService.class);
+			DataServiceAsync instance = (DataServiceAsync) GWT.create(DataService.class);
 			ServiceDefTarget target = (ServiceDefTarget) instance;
 			target.setServiceEntryPoint(GWT.getModuleBaseURL() + SERVICE_URI);
 			return instance;
 		}
 	}
-	
+
 	public String[][] getData();
 
 }

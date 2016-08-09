@@ -8,5 +8,5 @@ package com.voigt.hwd.server.util.criteria;
  * @param <T>
  */
 public interface ICriterion<T> {
-    public boolean pass(T oggetto);
+	public boolean pass(T oggetto);
 }

@@ -7,16 +7,16 @@ import com.voigt.hwd.server.GwtApplicationContext;
 
 public abstract class AbstractGwtRemoteService extends PersistentRemoteService {
 
-    public AbstractGwtRemoteService() {
-	super();
-	// set the configured bean manager
-	GwtApplicationContext context = GwtApplicationContext.getInstance();
-	PersistentBeanManager persistentBeanManager = (PersistentBeanManager) context.getBean("beanManager");
-	setBeanManager(persistentBeanManager);
-    }
+	public AbstractGwtRemoteService() {
+		super();
+		// set the configured bean manager
+		GwtApplicationContext context = GwtApplicationContext.getInstance();
+		PersistentBeanManager persistentBeanManager = (PersistentBeanManager) context.getBean("beanManager");
+		setBeanManager(persistentBeanManager);
+	}
 
-    protected GwtApplicationContext getContext() {
-	return GwtApplicationContext.getInstance();
-    }
+	protected GwtApplicationContext getContext() {
+		return GwtApplicationContext.getInstance();
+	}
 
 }

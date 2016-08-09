@@ -8,33 +8,33 @@ import com.voigt.hwd.client.admin.ds.UserDataSourceManager;
 
 public class UserManager extends AbstractBasePanel {
 
-    public static class Factory implements PanelFactory {
-	private String id;
+	public static class Factory implements PanelFactory {
+		private String id;
 
-	public Canvas create() {
-	    UserManager panel = new UserManager();
-	    id = panel.getID();
-	    return panel;
+		public Canvas create() {
+			UserManager panel = new UserManager();
+			id = panel.getID();
+			return panel;
+		}
+
+		public String getID() {
+			return id;
+		}
+
+		public String getDescription() {
+			return "";
+		}
 	}
 
-	public String getID() {
-	    return id;
+	@Override
+	public Canvas getViewPanel() {
+
+		HLayout layout = new HLayout();
+
+		CompoundEditor compoundEditor = new CompoundEditor(new UserDataSourceManager(), true, true);
+
+		layout.addMember(compoundEditor);
+		return layout;
 	}
-
-	public String getDescription() {
-	    return "";
-	}
-    }
-
-    @Override
-    public Canvas getViewPanel() {
-
-	HLayout layout = new HLayout();
-
-	CompoundEditor compoundEditor = new CompoundEditor(new UserDataSourceManager(), true, true);
-
-	layout.addMember(compoundEditor);
-	return layout;
-    }
 
 }

@@ -2,24 +2,24 @@ package com.voigt.hwd.server.service;
 
 /**
  * Interface of the application startup service
+ * 
  * @author bruno.marchesson
  *
  */
-public interface IStartupService
-{
-	//----
+public interface IStartupService {
+	// ----
 	// Constant
-	//----
+	// ----
 	/**
 	 * The IoC name
 	 */
 	public static final String NAME = "startupService";
-	
-	//-------------------------------------------------------------------------
+
+	// -------------------------------------------------------------------------
 	//
 	// Public interface
 	//
-	//-------------------------------------------------------------------------
+	// -------------------------------------------------------------------------
 	/**
 	 * Indicates if the needed data has been initialized
 	 */

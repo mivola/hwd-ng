@@ -4,9 +4,9 @@ import com.smartgwt.client.widgets.Canvas;
 
 public interface PanelFactory {
 
-    Canvas create();
+	Canvas create();
 
-    String getID();
+	String getID();
 
-    String getDescription();
+	String getDescription();
 }

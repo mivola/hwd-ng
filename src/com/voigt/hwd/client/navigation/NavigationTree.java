@@ -24,51 +24,51 @@ import com.smartgwt.client.widgets.tree.TreeGridField;
 
 public class NavigationTree extends TreeGrid {
 
-    private final String idSuffix = "";
+	private final String idSuffix = "";
 
-    private final ExplorerTreeNode[] navigationData = NavigationData.getData(idSuffix);
+	private final ExplorerTreeNode[] navigationData = NavigationData.getData(idSuffix);
 
-    public NavigationTree() {
-	setWidth100();
-	setHeight100();
-	// setShowHeader(false);
-	setCustomIconProperty("icon");
-	setAnimateFolderTime(100);
-	setAnimateFolders(true);
-	setAnimateFolderSpeed(1000);
-	setNodeIcon("silk/application_view_list.png");
-	setShowConnectors(true);
-	setShowSortArrow(SortArrow.CORNER);
-	setShowAllRecords(true);
-	setLoadDataOnDemand(false);
-	setCanSort(false);
-	// setShowFilterEditor(true);
+	public NavigationTree() {
+		setWidth100();
+		setHeight100();
+		// setShowHeader(false);
+		setCustomIconProperty("icon");
+		setAnimateFolderTime(100);
+		setAnimateFolders(true);
+		setAnimateFolderSpeed(1000);
+		setNodeIcon("silk/application_view_list.png");
+		setShowConnectors(true);
+		setShowSortArrow(SortArrow.CORNER);
+		setShowAllRecords(true);
+		setLoadDataOnDemand(false);
+		setCanSort(false);
+		// setShowFilterEditor(true);
 
-	// also works
-	// setDataSource(new HwdDS("side"));
-	// setAutoFetchData(true);
+		// also works
+		// setDataSource(new HwdDS("side"));
+		// setAutoFetchData(true);
 
-	TreeGridField field = new TreeGridField();
-	field.setCanFilter(true);
-	field.setName("name");
-	field.setTitle("<b>HWD NG</b>");
-	setFields(field);
+		TreeGridField field = new TreeGridField();
+		field.setCanFilter(true);
+		field.setName("name");
+		field.setTitle("<b>HWD NG</b>");
+		setFields(field);
 
-	Tree tree = new Tree();
-	tree.setModelType(TreeModelType.PARENT);
-	tree.setNameProperty("name");
-	tree.setOpenProperty("isOpen");
-	tree.setIdField("nodeID");
-	tree.setParentIdField("parentNodeID");
-	tree.setRootValue("root" + idSuffix);
-	tree.setShowRoot(true);
+		Tree tree = new Tree();
+		tree.setModelType(TreeModelType.PARENT);
+		tree.setNameProperty("name");
+		tree.setOpenProperty("isOpen");
+		tree.setIdField("nodeID");
+		tree.setParentIdField("parentNodeID");
+		tree.setRootValue("root" + idSuffix);
+		tree.setShowRoot(true);
 
-	tree.setData(navigationData);
+		tree.setData(navigationData);
 
-	setData(tree);
-    }
+		setData(tree);
+	}
 
-    public ExplorerTreeNode[] getShowcaseData() {
-	return navigationData;
-    }
+	public ExplorerTreeNode[] getShowcaseData() {
+		return navigationData;
+	}
 }

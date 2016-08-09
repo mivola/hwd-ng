@@ -6,29 +6,29 @@ package com.voigt.hwd.server.util.criteria;
  */
 public abstract class Criterion implements ICriterion<Object> {
 
-    private final CriterionType type;
-    private final Object[] params;
+	private final CriterionType type;
+	private final Object[] params;
 
-    /**
-     * Costruttore
-     * 
-     * @param propertyName
-     * @param lo
-     * @param hi
-     */
-    public Criterion(CriterionType type, Object... params) {
-	this.type = type;
-	this.params = params;
-    }
+	/**
+	 * Costruttore
+	 * 
+	 * @param propertyName
+	 * @param lo
+	 * @param hi
+	 */
+	public Criterion(CriterionType type, Object... params) {
+		this.type = type;
+		this.params = params;
+	}
 
-    public abstract boolean pass(Object oggetto);
+	public abstract boolean pass(Object oggetto);
 
-    public Object[] getParams() {
-	return params;
-    }
+	public Object[] getParams() {
+		return params;
+	}
 
-    public CriterionType getType() {
-	return type;
-    }
+	public CriterionType getType() {
+		return type;
+	}
 
 }

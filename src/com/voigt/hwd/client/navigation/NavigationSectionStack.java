@@ -17,82 +17,82 @@ import com.smartgwt.client.widgets.layout.SectionStackSection;
 
 public class NavigationSectionStack extends SectionStack {
 
-    private final String idSuffix = "";
+	private final String idSuffix = "";
 
-    private final ExplorerTreeNode[] navigationData = NavigationData.getData(idSuffix);
+	private final ExplorerTreeNode[] navigationData = NavigationData.getData(idSuffix);
 
-    /* nodeId, section (without the content) */
-    private final Map<String, SectionStackSection> sections = new HashMap<String, SectionStackSection>();
+	/* nodeId, section (without the content) */
+	private final Map<String, SectionStackSection> sections = new HashMap<String, SectionStackSection>();
 
-    /* parentNodeId, list of nodes */
-    private final Map<String, List<ExplorerTreeNode>> sectionTreeNodes = new HashMap<String, List<ExplorerTreeNode>>();
+	/* parentNodeId, list of nodes */
+	private final Map<String, List<ExplorerTreeNode>> sectionTreeNodes = new HashMap<String, List<ExplorerTreeNode>>();
 
-    public NavigationSectionStack(RecordClickHandler recordClickHandler) {
+	public NavigationSectionStack(RecordClickHandler recordClickHandler) {
 
-	this.setHeight100();
+		this.setHeight100();
 
-	this.setVisibilityMode(VisibilityMode.MULTIPLE);
-	this.setBorder("2px solid");
+		this.setVisibilityMode(VisibilityMode.MULTIPLE);
+		this.setBorder("2px solid");
 
-	for (ExplorerTreeNode node : navigationData) {
+		for (ExplorerTreeNode node : navigationData) {
 
-	    if (node.getParentNodeID().equals(NavigationData.ROOT)) {
-		// create a new section
-		SectionStackSection section = new SectionStackSection(node.getName());
-		section.setID(node.getNodeID());
-		sections.put(node.getNodeID(), section);
-	    } else {
+			if (node.getParentNodeID().equals(NavigationData.ROOT)) {
+				// create a new section
+				SectionStackSection section = new SectionStackSection(node.getName());
+				section.setID(node.getNodeID());
+				sections.put(node.getNodeID(), section);
+			} else {
 
-		// get the map entry for the parent of this node
-		String parentNodeID = node.getParentNodeID();
+				// get the map entry for the parent of this node
+				String parentNodeID = node.getParentNodeID();
 
-		List<ExplorerTreeNode> sectionNodes = sectionTreeNodes.get(parentNodeID);
-		if (sectionNodes == null) {
-		    sectionNodes = new ArrayList<ExplorerTreeNode>();
+				List<ExplorerTreeNode> sectionNodes = sectionTreeNodes.get(parentNodeID);
+				if (sectionNodes == null) {
+					sectionNodes = new ArrayList<ExplorerTreeNode>();
+				}
+
+				// add the new node to the list
+				sectionNodes.add(node);
+
+				sectionTreeNodes.put(parentNodeID, sectionNodes);
+
+			}
+
 		}
 
-		// add the new node to the list
-		sectionNodes.add(node);
+		// add all sections to the stack
+		Set<String> keySet = sections.keySet();
+		for (String key : keySet) {
 
-		sectionTreeNodes.put(parentNodeID, sectionNodes);
+			SectionStackSection section = sections.get(key);
 
-	    }
+			// create new grid
+			final ListGrid listGrid = new ListGrid();
+			listGrid.setCanEdit(false);
+			listGrid.setShowHeader(false);
+			listGrid.setShowHeaderContextMenu(false);
+			listGrid.setShowSortArrow(SortArrow.NONE);
+			listGrid.setShowTreeColumnPicker(false);
+			listGrid.setShowHeaderMenuButton(false);
+
+			// add one column that refers the name attribute of the
+			// ExplorerTreeNode
+			List<ExplorerTreeNode> sectionNodes = sectionTreeNodes.get(key);
+			listGrid.setFields(new ListGridField("name", "Name"));
+
+			// add the data
+			if (sectionNodes != null) {
+				ListGridRecord[] arrayOfRecords = sectionNodes.toArray(new ListGridRecord[sectionNodes.size()]);
+				listGrid.setData(arrayOfRecords);
+			}
+
+			listGrid.addRecordClickHandler(recordClickHandler);
+
+			// add the grid to the section and the section to the stack
+			section.setItems(listGrid);
+			this.addSection(section);
+		}
 
 	}
-
-	// add all sections to the stack
-	Set<String> keySet = sections.keySet();
-	for (String key : keySet) {
-
-	    SectionStackSection section = sections.get(key);
-
-	    // create new grid
-	    final ListGrid listGrid = new ListGrid();
-	    listGrid.setCanEdit(false);
-	    listGrid.setShowHeader(false);
-	    listGrid.setShowHeaderContextMenu(false);
-	    listGrid.setShowSortArrow(SortArrow.NONE);
-	    listGrid.setShowTreeColumnPicker(false);
-	    listGrid.setShowHeaderMenuButton(false);
-
-	    // add one column that refers the name attribute of the
-	    // ExplorerTreeNode
-	    List<ExplorerTreeNode> sectionNodes = sectionTreeNodes.get(key);
-	    listGrid.setFields(new ListGridField("name", "Name"));
-
-	    // add the data
-	    if (sectionNodes != null) {
-		ListGridRecord[] arrayOfRecords = sectionNodes.toArray(new ListGridRecord[sectionNodes.size()]);
-		listGrid.setData(arrayOfRecords);
-	    }
-
-	    listGrid.addRecordClickHandler(recordClickHandler);
-
-	    // add the grid to the section and the section to the stack
-	    section.setItems(listGrid);
-	    this.addSection(section);
-	}
-
-    }
 
 }

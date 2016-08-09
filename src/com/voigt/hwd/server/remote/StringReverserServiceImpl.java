@@ -15,20 +15,20 @@ import com.voigt.hwd.client.service.StringReverserService;
  */
 public class StringReverserServiceImpl extends RemoteServiceServlet implements StringReverserService {
 
-    private static final long serialVersionUID = 1656825488007884532L;
+	private static final long serialVersionUID = 1656825488007884532L;
 
-    /**
-     * This method is used to reverse a string
-     * 
-     * @param stringToReverse
-     *                The string that you want reversed
-     * @return The reversed string
-     */
-    public String reverseString(String stringToReverse) {
-	StringBuffer reverse = new StringBuffer(stringToReverse.length());
+	/**
+	 * This method is used to reverse a string
+	 * 
+	 * @param stringToReverse
+	 *            The string that you want reversed
+	 * @return The reversed string
+	 */
+	public String reverseString(String stringToReverse) {
+		StringBuffer reverse = new StringBuffer(stringToReverse.length());
 
-	for (int i = (stringToReverse.length() - 1); i >= 0; i--)
-	    reverse.append(stringToReverse.charAt(i));
-	return reverse.toString();
-    }
+		for (int i = (stringToReverse.length() - 1); i >= 0; i--)
+			reverse.append(stringToReverse.charAt(i));
+		return reverse.toString();
+	}
 }

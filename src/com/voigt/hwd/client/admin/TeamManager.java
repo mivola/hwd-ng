@@ -8,33 +8,33 @@ import com.voigt.hwd.client.admin.ds.TeamDataSourceManager;
 
 public class TeamManager extends AbstractBasePanel {
 
-    public static class Factory implements PanelFactory {
-	private String id;
+	public static class Factory implements PanelFactory {
+		private String id;
 
-	public Canvas create() {
-	    TeamManager panel = new TeamManager();
-	    id = panel.getID();
-	    return panel;
+		public Canvas create() {
+			TeamManager panel = new TeamManager();
+			id = panel.getID();
+			return panel;
+		}
+
+		public String getID() {
+			return id;
+		}
+
+		public String getDescription() {
+			return "";
+		}
 	}
 
-	public String getID() {
-	    return id;
+	@Override
+	public Canvas getViewPanel() {
+
+		HLayout layout = new HLayout();
+
+		CompoundEditor compoundEditor = new CompoundEditor(new TeamDataSourceManager(), true, false);
+
+		layout.addMember(compoundEditor);
+		return layout;
 	}
-
-	public String getDescription() {
-	    return "";
-	}
-    }
-
-    @Override
-    public Canvas getViewPanel() {
-
-	HLayout layout = new HLayout();
-
-	CompoundEditor compoundEditor = new CompoundEditor(new TeamDataSourceManager(), true, false);
-
-	layout.addMember(compoundEditor);
-	return layout;
-    }
 
 }

@@ -64,8 +64,8 @@ public class OpenLigaDataImporter implements IDataImporter {
 		int year = season.getYear();
 
 		String oLShortcut = league.getOLShortcut();
-		List<Match> matchesOfMatchDayInLeague = oLImporter.getMatchesOfMatchDay(year, oLShortcut, matchDay
-				.getMatchDayId());
+		List<Match> matchesOfMatchDayInLeague = oLImporter.getMatchesOfMatchDay(year, oLShortcut,
+				matchDay.getMatchDayId());
 		matches.addAll(matchesOfMatchDayInLeague);
 
 		return matches;

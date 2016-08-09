@@ -32,5 +32,5 @@
 package com.voigt.hwd.client.navigation;
 
 public interface Command {
-    public void execute();
+	public void execute();
 }

@@ -15,27 +15,27 @@ import com.voigt.hwd.server.service.impl.IdentificationService;
 
 public class ServiceTest {
 
-    @Test
-    public void testServiceInvocation() {
+	@Test
+	public void testServiceInvocation() {
 
-	GwtApplicationContext applicationContext = GwtApplicationContext.getInstance();
+		GwtApplicationContext applicationContext = GwtApplicationContext.getInstance();
 
-	IStartupService startupService = (IStartupService) applicationContext.getBean(IStartupService.NAME);
-	assertNotNull(startupService);
+		IStartupService startupService = (IStartupService) applicationContext.getBean(IStartupService.NAME);
+		assertNotNull(startupService);
 
-	startupService.initialize();
+		startupService.initialize();
 
-	boolean initialized = startupService.isInitialized();
-	assertTrue(initialized);
+		boolean initialized = startupService.isInitialized();
+		assertTrue(initialized);
 
-	IdentificationService identificationService = (IdentificationService) applicationContext
-		.getBean("identificationService");
-	List<User> allUsers = identificationService.getAll();
-	assertNotNull(allUsers);
-	assertNotNull(allUsers.get(0));
-	List<User> allUsers2 = identificationService.loadUserList();
-	assertEquals(allUsers.size(), allUsers2.size());
+		IdentificationService identificationService = (IdentificationService) applicationContext
+				.getBean("identificationService");
+		List<User> allUsers = identificationService.getAll();
+		assertNotNull(allUsers);
+		assertNotNull(allUsers.get(0));
+		List<User> allUsers2 = identificationService.loadUserList();
+		assertEquals(allUsers.size(), allUsers2.size());
 
-    }
+	}
 
 }

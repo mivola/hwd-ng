@@ -4,6 +4,6 @@ import com.voigt.hwd.domain.Match;
 
 public interface IMediator {
 
-    public Match createMatch(Object matchdata);
+	public Match createMatch(Object matchdata);
 
 }

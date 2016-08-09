@@ -14,5 +14,5 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
  */
 
 public interface StringReverserServiceAsync {
-  public void reverseString(String stringToReverse, AsyncCallback callback);
+	public void reverseString(String stringToReverse, AsyncCallback callback);
 }
