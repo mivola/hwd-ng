@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+		http://www.springframework.org/schema/beans/spring-beans-2.0.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-2.0.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-2.0.xsd"
+	default-autowire="byName">
+	
+	
+	<bean id="abstractGenericService" class="com.voigt.hwd.server.service.impl.GenericServiceImpl" abstract="true">
+	</bean>
+	
+	<bean id="teamServiceTarget" class="com.voigt.hwd.server.service.impl.TeamService" parent="abstractGenericService">
+	</bean>
+	<bean id="teamServiceProxy" parent="baseTransactionProxyFactory">
+		<property name="target"><ref local="teamServiceTarget"/></property>
+	</bean>
+
+	<!-- Identification service -->
+	<bean id="identificationService" class="com.voigt.hwd.server.service.impl.IdentificationService" parent="abstractGenericService" />
+	
+	<bean id="teamService" class="com.voigt.hwd.server.service.impl.TeamService" parent="abstractGenericService" />
+	
+	<bean id="matchService" class="com.voigt.hwd.server.service.impl.GenericServiceImpl" parent="abstractGenericService">
+		<property name="dao" ref="matchDao" />
+	</bean>
+	<bean id="matchDayService" class="com.voigt.hwd.server.service.impl.GenericServiceImpl" parent="abstractGenericService">
+		<property name="dao" ref="matchDayDao" />
+	</bean>
+	<bean id="leagueService" class="com.voigt.hwd.server.service.impl.GenericServiceImpl" parent="abstractGenericService">
+		<property name="dao" ref="leagueDao" />
+	</bean>
+	<bean id="seasonService" class="com.voigt.hwd.server.service.impl.GenericServiceImpl" parent="abstractGenericService">
+		<property name="dao" ref="seasonDao" />
+	</bean>
+	
+	<bean id="matchFixtureService" class="com.voigt.hwd.server.service.impl.MatchFixtureService" parent="abstractGenericService" />
+	<bean id="matchFixtureServiceTarget" class="com.voigt.hwd.server.service.impl.MatchFixtureService" parent="abstractGenericService" />
+	<bean id="matchFixtureServiceProxy" parent="baseTransactionProxyFactory">
+		<property name="target"><ref local="matchFixtureServiceTarget"/></property>
+	</bean>
+	
+	<!-- Startup service -->
+	<bean id="startupService" class="com.voigt.hwd.server.service.impl.StartupService" />
+
+</beans>

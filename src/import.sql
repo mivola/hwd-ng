@@ -1,0 +1,2 @@
+INSERT INTO TEAM VALUES (1,'dd','sdafsadf',21);
+INSERT INTO TEAM VALUES (2,'aa','2. team',22)

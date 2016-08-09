@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><module>
+
+    <inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.core.Core"/>
+	<inherits name="com.google.gwt.user.History"/>
+	
+	<inherits name="com.google.gwt.i18n.I18N"/>
+	
+    <inherits name="com.smartgwt.SmartGwtNoScript"/>
+    <inherits name="com.smartclient.theme.enterprise.EnterpriseResources"/>
+    <inherits name="com.smartclient.theme.blackops.BlackOpsResources"/>
+    <inherits name="com.smartclient.theme.silverwave.SilverWaveResources"/>
+    <inherits name="com.smartclient.theme.treefrog.TreeFrogResources"/>
+    <inherits name="com.smartclient.theme.fleet.FleetResources"/>
+    <!-- 
+     -->
+
+	<inherits name="net.sf.gilead.Adapter4Gwt15"/>
+	<!-- 
+	<inherits name="net.sf.gilead.emul.java5.ejb3.Ejb3"/>
+	 -->
+
+    <!-- 
+    <inherits name="com.googlecode.gwt-gchart"/>
+    -->
+    <inherits name="com.googlecode.charts4j"/>
+
+	<!-- Inherit Chronoscope. 
+	<inherits name='org.timepedia.chronoscope.Chronoscope'/> 
+	-->  
+    
+    <!-- logging with gwt-log -->
+	<!-- Add gwt-log support, default level `DEBUG` -->
+	<inherits name="com.allen_sauer.gwt.log.gwt-log-DEBUG" />
+            
+	<!-- contains all domain objects that are shared between client and server -->
+	<source path="domain"/>
+	<source path="client"/>
+    
+    
+    <entry-point class="com.voigt.hwd.client.Hwd"/>
+
+	
+  	<!-- Generator -->
+  	<generate-with class="net.sf.gilead.proxy.gwt.Gwt15ProxyGenerator">
+		<when-type-assignable class="com.voigt.hwd.domain.IDomainObject" />
+	</generate-with>
+
+
+
+	<!-- Servlet path -->
+	<servlet path="/StringReverserService" class="com.voigt.hwd.server.remote.StringReverserServiceImpl" />
+	<servlet path="/UserService" class="com.voigt.hwd.server.remote.UserServiceImpl" />
+	<servlet path="/TeamService" class="com.voigt.hwd.server.remote.TeamServiceImpl" />
+	<servlet path="/MatchService" class="com.voigt.hwd.server.remote.MatchServiceImpl" />
+	<servlet path="/dataservice" class="com.voigt.hwd.server.remote.DataServiceImpl" />
+	
+	<servlet path="/gwt-log" class="com.allen_sauer.gwt.log.server.RemoteLoggerServiceImpl" />
+
+</module>

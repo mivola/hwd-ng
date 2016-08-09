@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="openLigaDB" resourceRoot="" soapui-version="2.5" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ProjectSettings@projectRoot">C:\_data\workspaces\gwt\_workspace.gwt\hwd-ng\resources</con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="SportsdataSoap" type="wsdl" bindingName="{http://msiggi.de/Sportsdata/Webservices}SportsdataSoap" soapVersion="1_1" anonymous="optional" definition="http://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailGroups" name="GetAvailGroups" bindingOperationName="GetAvailGroups" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailGroups>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetAvailGroups>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailGroupsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailLeagues" name="GetAvailLeagues" bindingOperationName="GetAvailLeagues" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailLeagues/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailLeaguesBySports" name="GetAvailLeaguesBySports" bindingOperationName="GetAvailLeaguesBySports" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailLeaguesBySports>
+         <!--type: int-->
+         <web:sportID>3</web:sportID>
+      </web:GetAvailLeaguesBySports>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesBySportsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailSports" name="GetAvailSports" bindingOperationName="GetAvailSports" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailSports/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailSportsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetCurrentGroupOrderID" name="GetCurrentGroupOrderID" bindingOperationName="GetCurrentGroupOrderID" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrentGroupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetCurrentGroupOrderID>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetCurrentGroupOrderIDRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetFusballdaten" name="GetFusballdaten" bindingOperationName="GetFusballdaten" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetFusballdaten>
+         <!--type: int-->
+         <web:Spieltag>3</web:Spieltag>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Liga>gero et</web:Liga>
+         <!--type: int-->
+         <web:Saison>3</web:Saison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Userkennung>sonoras imperio</web:Userkennung>
+      </web:GetFusballdaten>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetFusballdatenRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetLastMatch" name="GetLastMatch" bindingOperationName="GetLastMatch" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetLastMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetLastMatch>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetLastMatchRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchByMatchID" name="GetMatchByMatchID" bindingOperationName="GetMatchByMatchID" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchByMatchID>
+         <!--type: int-->
+         <web:MatchID>3</web:MatchID>
+      </web:GetMatchByMatchID>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchByMatchIDRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaison" name="GetMatchdataByGroupLeagueSaison" bindingOperationName="GetMatchdataByGroupLeagueSaison" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByGroupLeagueSaison>
+         <!--type: int-->
+         <web:groupOrderID>3</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaison>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaisonJSON" name="GetMatchdataByGroupLeagueSaisonJSON" bindingOperationName="GetMatchdataByGroupLeagueSaisonJSON" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByGroupLeagueSaisonJSON>
+         <!--type: int-->
+         <web:groupOrderID>3</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaisonJSON>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonJSONRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueDateTime" name="GetMatchdataByLeagueDateTime" bindingOperationName="GetMatchdataByLeagueDateTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByLeagueDateTime>
+         <!--type: dateTime-->
+         <web:fromDateTime>2008-09-29T03:49:45</web:fromDateTime>
+         <!--type: dateTime-->
+         <web:toDateTime>2014-09-19T01:18:33</web:toDateTime>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>verrantque per auras</web:leagueShortcut>
+      </web:GetMatchdataByLeagueDateTime>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueDateTimeRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueSaison" name="GetMatchdataByLeagueSaison" bindingOperationName="GetMatchdataByLeagueSaison" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByLeagueSaison>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueSaisonRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByTeams" name="GetMatchdataByTeams" bindingOperationName="GetMatchdataByTeams" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByTeams>
+         <!--type: int-->
+         <web:teamID1>3</web:teamID1>
+         <!--type: int-->
+         <web:teamID2>3</web:teamID2>
+      </web:GetMatchdataByTeams>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByTeamsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetNextMatch" name="GetNextMatch" bindingOperationName="GetNextMatch" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetNextMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetNextMatch>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetNextMatchRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetTeamsByLeagueSaison" name="GetTeamsByLeagueSaison" bindingOperationName="GetTeamsByLeagueSaison" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetTeamsByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetTeamsByLeagueSaison>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetTeamsByLeagueSaisonRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="SportsdataSoap12" type="wsdl" bindingName="{http://msiggi.de/Sportsdata/Webservices}SportsdataSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL"><con:part><con:url>http://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://msiggi.de/Sportsdata/Webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://msiggi.de/Sportsdata/Webservices" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://msiggi.de/Sportsdata/Webservices">
+      <s:element name="GetAvailLeagues">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetAvailLeaguesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailLeaguesResult" type="tns:ArrayOfLeague"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLeague">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="League" type="tns:League"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="League">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="leagueID" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="leagueSportID" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="leagueName" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="leagueSaison" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetNextMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNextMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetNextMatchResult" type="tns:Matchdata"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Matchdata">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="matchID" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="matchDateTime" type="s:dateTime"/>
+          <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="groupOrderID" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="groupName" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="leagueID" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="leagueName" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="leagueSaison" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="nameTeam1" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="nameTeam2" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="idTeam1" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="idTeam2" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="iconUrlTeam1" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="iconUrlTeam2" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="pointsTeam1" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="pointsTeam2" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="lastUpdate" type="s:dateTime"/>
+          <s:element minOccurs="1" maxOccurs="1" name="matchIsFinished" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="matchResults" type="tns:ArrayOfMatchResult"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMatchResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="matchResult" type="tns:matchResult"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="matchResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="resultName" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="pointsTeam1" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="pointsTeam2" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="resultOrderID" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLastMatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastMatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLastMatchResult" type="tns:Matchdata"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentGroupOrderID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentGroupOrderIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCurrentGroupOrderIDResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByGroupLeagueSaison">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupOrderID" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueSaison" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByGroupLeagueSaisonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMatchdataByGroupLeagueSaisonResult" type="tns:ArrayOfMatchdata"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMatchdata">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Matchdata" type="tns:Matchdata"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMatchdataByLeagueDateTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fromDateTime" type="s:dateTime"/>
+            <s:element minOccurs="1" maxOccurs="1" name="toDateTime" type="s:dateTime"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByLeagueDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMatchdataByLeagueDateTimeResult" type="tns:ArrayOfMatchdata"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByTeams">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="teamID1" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="teamID2" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByTeamsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMatchdataByTeamsResult" type="tns:ArrayOfMatchdata"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByLeagueSaison">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueSaison" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByLeagueSaisonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMatchdataByLeagueSaisonResult" type="tns:ArrayOfMatchdata"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByGroupLeagueSaisonJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupOrderID" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueSaison" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchdataByGroupLeagueSaisonJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMatchdataByGroupLeagueSaisonJSONResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFusballdaten">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Spieltag" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Liga" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Saison" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Userkennung" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFusballdatenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFusballdatenResult" type="tns:ArrayOfFussballdaten"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFussballdaten">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Fussballdaten" type="tns:Fussballdaten"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Fussballdaten">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SpielID" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Spieltag" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Spieldatum" type="s:dateTime"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Team1" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Team2" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="ErgebnisTeam1" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="ErgebnisTeam2" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="lastUpdate" type="s:dateTime"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMatchByMatchID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MatchID" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMatchByMatchIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMatchByMatchIDResult" type="tns:Matchdata"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeamsByLeagueSaison">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueSaison" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTeamsByLeagueSaisonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTeamsByLeagueSaisonResult" type="tns:ArrayOfTeam"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTeam">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Team" type="tns:Team"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Team">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="teamID" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="teamName" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="teamIconURL" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAvailGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueShortcut" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="leagueSaison" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailGroupsResult" type="tns:ArrayOfGroup"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfGroup">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Group" type="tns:Group"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Group">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="groupName" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="groupOrderID" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="groupID" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAvailSports">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetAvailSportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailSportsResult" type="tns:ArrayOfSports"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSports">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Sports" type="tns:Sports"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Sports">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="sportsID" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="sportsName" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAvailLeaguesBySports">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sportID" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailLeaguesBySportsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailLeaguesBySportsResult" type="tns:ArrayOfLeague"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAvailLeaguesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailLeagues"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailLeaguesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailLeaguesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetNextMatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNextMatch"/>
+  </wsdl:message>
+  <wsdl:message name="GetNextMatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNextMatchResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLastMatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastMatch"/>
+  </wsdl:message>
+  <wsdl:message name="GetLastMatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastMatchResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentGroupOrderIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentGroupOrderID"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentGroupOrderIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentGroupOrderIDResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByGroupLeagueSaisonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByGroupLeagueSaison"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByGroupLeagueSaisonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByGroupLeagueSaisonResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByLeagueDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByLeagueDateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByLeagueDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByLeagueDateTimeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByTeamsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByTeams"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByTeamsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByTeamsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByLeagueSaisonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByLeagueSaison"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByLeagueSaisonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByLeagueSaisonResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByGroupLeagueSaisonJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByGroupLeagueSaisonJSON"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchdataByGroupLeagueSaisonJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatchdataByGroupLeagueSaisonJSONResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFusballdatenSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFusballdaten"/>
+  </wsdl:message>
+  <wsdl:message name="GetFusballdatenSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFusballdatenResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchByMatchIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMatchByMatchID"/>
+  </wsdl:message>
+  <wsdl:message name="GetMatchByMatchIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMatchByMatchIDResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetTeamsByLeagueSaisonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTeamsByLeagueSaison"/>
+  </wsdl:message>
+  <wsdl:message name="GetTeamsByLeagueSaisonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTeamsByLeagueSaisonResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailGroups"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailGroupsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailSportsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailSports"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailSportsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailSportsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailLeaguesBySportsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailLeaguesBySports"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailLeaguesBySportsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailLeaguesBySportsResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="SportsdataSoap">
+    <wsdl:operation name="GetAvailLeagues">
+      <wsdl:documentation>Gibt eine Struktur aller verfügbaren Ligen zurück! Erwartet keine Parameter</wsdl:documentation>
+      <wsdl:input message="tns:GetAvailLeaguesSoapIn"/>
+      <wsdl:output message="tns:GetAvailLeaguesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextMatch">
+      <wsdl:documentation>Gibt eine Struktur des nächsten anstehenden Spieles der als Parameter zu übergebenden Liga zurueck.</wsdl:documentation>
+      <wsdl:input message="tns:GetNextMatchSoapIn"/>
+      <wsdl:output message="tns:GetNextMatchSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastMatch">
+      <wsdl:documentation>Gibt eine Struktur des zuletzt ausgetragenen Spieles der als Parameter zu übergebenden Liga zurueck.</wsdl:documentation>
+      <wsdl:input message="tns:GetLastMatchSoapIn"/>
+      <wsdl:output message="tns:GetLastMatchSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentGroupOrderID">
+      <wsdl:documentation>Gibt die aktuelle groupOrderID (entspricht z.B. bei der Fussball-Bundesliga dem 'Spieltag') des als Parameter zu übergebenden leagueShortcuts (z.B. 'bl1') aus. Der aktuelle Spieltag wird jeweils zur Hälfte der Zeit zwischen dem letzten Spiel des letzten Spieltages und dem ersten Spiel des nächsten Spieltages erhöht.</wsdl:documentation>
+      <wsdl:input message="tns:GetCurrentGroupOrderIDSoapIn"/>
+      <wsdl:output message="tns:GetCurrentGroupOrderIDSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByGroupLeagueSaison">
+      <wsdl:documentation>Gibt eine Struktur von Sport-Spieldaten zurueck. Als Parameter werden eine groupOrderID (zu entnehmen aus GetAvailGroups, entspricht z.B. bei der Fussball-Bundesliga dem Spieltag), der Liga-Shortcut (z.B. 'bl1') sowie die Saison (aus GetAvailLeagues, z.B. '2007') erwartet.</wsdl:documentation>
+      <wsdl:input message="tns:GetMatchdataByGroupLeagueSaisonSoapIn"/>
+      <wsdl:output message="tns:GetMatchdataByGroupLeagueSaisonSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByLeagueDateTime">
+      <wsdl:documentation>Gibt eine Struktur von Sport-Spieldaten zurueck. Die Beginn-Zeit der ausgegebenen Spieldaten liegt zwischen den als Parameter zu übergebenen DateTime-Werten. (fromDateTime &lt;= matchBeginDateTime &lt; toDateTime)Als weiterer Parameter wird der Liga-Shortcut (z.B. 'bl1') erwartet.</wsdl:documentation>
+      <wsdl:input message="tns:GetMatchdataByLeagueDateTimeSoapIn"/>
+      <wsdl:output message="tns:GetMatchdataByLeagueDateTimeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByTeams">
+      <wsdl:documentation>Gibt eine Struktur von Matches zurück, bei welchen die als Parameter übergebenen Teams gegeneinander spielten.</wsdl:documentation>
+      <wsdl:input message="tns:GetMatchdataByTeamsSoapIn"/>
+      <wsdl:output message="tns:GetMatchdataByTeamsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByLeagueSaison">
+      <wsdl:documentation>Gibt eine Struktur von Sport-Spieldaten aller Spiele der Liga pro Saison zurueck. Als Parameter werden der Liga-Shortcut (z.B. 'bl1') sowie die Saison (aus GetAvailLeagues, z.B. '2007') erwartet.</wsdl:documentation>
+      <wsdl:input message="tns:GetMatchdataByLeagueSaisonSoapIn"/>
+      <wsdl:output message="tns:GetMatchdataByLeagueSaisonSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByGroupLeagueSaisonJSON">
+      <wsdl:documentation>Gibt einen serialisiertes JSON-Objekt von Sport-Spieldaten zurueck. Als Parameter werden eine groupOrderID (zu entnehmen aus GetAvailGroups, entspricht z.B. bei der Fussball-Bundesliga dem Spieltag), der Liga-Shortcut (z.B. 'bl1') sowie die Saison (aus GetAvailLeagues, z.B. '2007') erwartet.</wsdl:documentation>
+      <wsdl:input message="tns:GetMatchdataByGroupLeagueSaisonJSONSoapIn"/>
+      <wsdl:output message="tns:GetMatchdataByGroupLeagueSaisonJSONSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFusballdaten">
+      <wsdl:documentation>Gibt eine Struktur deutscher Fussball-Spieldaten zurueck. Diese Methode steht nur noch aus Gründen der Kompatibilität zu älteren Applikationen zur Verfügung. Bitte nutzen sie vorrangig die GetMatchdata... - Methoden!</wsdl:documentation>
+      <wsdl:input message="tns:GetFusballdatenSoapIn"/>
+      <wsdl:output message="tns:GetFusballdatenSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchByMatchID">
+      <wsdl:documentation>Gibt eine Struktur des Spieles der als Parameter zu übergebenden MatchID zurueck.</wsdl:documentation>
+      <wsdl:input message="tns:GetMatchByMatchIDSoapIn"/>
+      <wsdl:output message="tns:GetMatchByMatchIDSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsByLeagueSaison">
+      <wsdl:documentation>Gibt eine Liste aller Teams der als Parameter zu übergebenden Liga + Saison zurueck.</wsdl:documentation>
+      <wsdl:input message="tns:GetTeamsByLeagueSaisonSoapIn"/>
+      <wsdl:output message="tns:GetTeamsByLeagueSaisonSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailGroups">
+      <wsdl:documentation>Gibt eine Liste der bereits eingetragenen Spiel-Einteilungen (Spieltag, Vorrunde, Finale, ...) der als Parameter zu übergebenden Liga + Saison zurueck.</wsdl:documentation>
+      <wsdl:input message="tns:GetAvailGroupsSoapIn"/>
+      <wsdl:output message="tns:GetAvailGroupsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailSports">
+      <wsdl:documentation>Gibt eine Liste der verfügbaren Sportarten, für welche gültige Ligen bestehen, zurück. Erwartet keine Parameter</wsdl:documentation>
+      <wsdl:input message="tns:GetAvailSportsSoapIn"/>
+      <wsdl:output message="tns:GetAvailSportsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailLeaguesBySports">
+      <wsdl:documentation>Gibt eine Struktur aller verfügbaren Ligen für die zu übergebende SportID zurück. Diese ist aus 'GetAvailSports()' zu entnehmen!</wsdl:documentation>
+      <wsdl:input message="tns:GetAvailLeaguesBySportsSoapIn"/>
+      <wsdl:output message="tns:GetAvailLeaguesBySportsSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SportsdataSoap" type="tns:SportsdataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetAvailLeagues">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailLeagues" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextMatch">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetNextMatch" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastMatch">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetLastMatch" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentGroupOrderID">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetCurrentGroupOrderID" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByGroupLeagueSaison">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaison" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByLeagueDateTime">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueDateTime" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByTeams">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByTeams" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByLeagueSaison">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueSaison" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByGroupLeagueSaisonJSON">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaisonJSON" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFusballdaten">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetFusballdaten" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchByMatchID">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchByMatchID" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsByLeagueSaison">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetTeamsByLeagueSaison" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailGroups">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailGroups" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailSports">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailSports" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailLeaguesBySports">
+      <soap:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailLeaguesBySports" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SportsdataSoap12" type="tns:SportsdataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetAvailLeagues">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailLeagues" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextMatch">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetNextMatch" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastMatch">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetLastMatch" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentGroupOrderID">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetCurrentGroupOrderID" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByGroupLeagueSaison">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaison" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByLeagueDateTime">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueDateTime" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByTeams">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByTeams" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByLeagueSaison">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueSaison" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchdataByGroupLeagueSaisonJSON">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaisonJSON" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFusballdaten">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetFusballdaten" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMatchByMatchID">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetMatchByMatchID" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamsByLeagueSaison">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetTeamsByLeagueSaison" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailGroups">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailGroups" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailSports">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailSports" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailLeaguesBySports">
+      <soap12:operation soapAction="http://msiggi.de/Sportsdata/Webservices/GetAvailLeaguesBySports" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Sportsdata">
+    <wsdl:port name="SportsdataSoap" binding="tns:SportsdataSoap">
+      <soap:address location="http://www.openligadb.de/Webservices/Sportsdata.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="SportsdataSoap12" binding="tns:SportsdataSoap12">
+      <soap12:address location="http://www.openligadb.de/Webservices/Sportsdata.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailGroups" name="GetAvailGroups" bindingOperationName="GetAvailGroups" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailGroups>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetAvailGroups>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailGroupsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailLeagues" name="GetAvailLeagues" bindingOperationName="GetAvailLeagues" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailLeagues/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailLeaguesBySports" name="GetAvailLeaguesBySports" bindingOperationName="GetAvailLeaguesBySports" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailLeaguesBySports>
+         <!--type: int-->
+         <web:sportID>3</web:sportID>
+      </web:GetAvailLeaguesBySports>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesBySportsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetAvailSports" name="GetAvailSports" bindingOperationName="GetAvailSports" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailSports/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailSportsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetCurrentGroupOrderID" name="GetCurrentGroupOrderID" bindingOperationName="GetCurrentGroupOrderID" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrentGroupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetCurrentGroupOrderID>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetCurrentGroupOrderIDRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetFusballdaten" name="GetFusballdaten" bindingOperationName="GetFusballdaten" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetFusballdaten>
+         <!--type: int-->
+         <web:Spieltag>3</web:Spieltag>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Liga>gero et</web:Liga>
+         <!--type: int-->
+         <web:Saison>3</web:Saison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Userkennung>sonoras imperio</web:Userkennung>
+      </web:GetFusballdaten>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetFusballdatenRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetLastMatch" name="GetLastMatch" bindingOperationName="GetLastMatch" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetLastMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetLastMatch>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetLastMatchRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchByMatchID" name="GetMatchByMatchID" bindingOperationName="GetMatchByMatchID" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchByMatchID>
+         <!--type: int-->
+         <web:MatchID>3</web:MatchID>
+      </web:GetMatchByMatchID>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchByMatchIDRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaison" name="GetMatchdataByGroupLeagueSaison" bindingOperationName="GetMatchdataByGroupLeagueSaison" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByGroupLeagueSaison>
+         <!--type: int-->
+         <web:groupOrderID>3</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaison>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByGroupLeagueSaisonJSON" name="GetMatchdataByGroupLeagueSaisonJSON" bindingOperationName="GetMatchdataByGroupLeagueSaisonJSON" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByGroupLeagueSaisonJSON>
+         <!--type: int-->
+         <web:groupOrderID>3</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaisonJSON>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonJSONRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueDateTime" name="GetMatchdataByLeagueDateTime" bindingOperationName="GetMatchdataByLeagueDateTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByLeagueDateTime>
+         <!--type: dateTime-->
+         <web:fromDateTime>2008-09-29T03:49:45</web:fromDateTime>
+         <!--type: dateTime-->
+         <web:toDateTime>2014-09-19T01:18:33</web:toDateTime>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>verrantque per auras</web:leagueShortcut>
+      </web:GetMatchdataByLeagueDateTime>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueDateTimeRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByLeagueSaison" name="GetMatchdataByLeagueSaison" bindingOperationName="GetMatchdataByLeagueSaison" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByLeagueSaison>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueSaisonRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetMatchdataByTeams" name="GetMatchdataByTeams" bindingOperationName="GetMatchdataByTeams" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByTeams>
+         <!--type: int-->
+         <web:teamID1>3</web:teamID1>
+         <!--type: int-->
+         <web:teamID2>3</web:teamID2>
+      </web:GetMatchdataByTeams>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByTeamsRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetNextMatch" name="GetNextMatch" bindingOperationName="GetNextMatch" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetNextMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetNextMatch>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetNextMatchRequest"/></con:call></con:operation><con:operation isOneWay="false" action="http://msiggi.de/Sportsdata/Webservices/GetTeamsByLeagueSaison" name="GetTeamsByLeagueSaison" bindingOperationName="GetTeamsByLeagueSaison" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetTeamsByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetTeamsByLeagueSaison>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetTeamsByLeagueSaisonRequest"/></con:call></con:operation></con:interface><con:testSuite name="SportsdataSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailGroups TestCase" searchProperties="true" id="241a6db3-fad0-487f-99fd-0bdf76ffe56d"><con:settings/><con:testStep type="request" name="GetAvailGroups"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetAvailGroups</con:operation><con:request name="GetAvailGroups"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailGroups>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetAvailGroups>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailGroupsRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailLeagues TestCase" searchProperties="true" id="9861a9ee-3d31-4367-a54a-63dfdaedb923"><con:settings/><con:testStep type="request" name="GetAvailLeagues"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetAvailLeagues</con:operation><con:request name="GetAvailLeagues"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailLeagues/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailLeaguesBySports TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAvailLeaguesBySports"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetAvailLeaguesBySports</con:operation><con:request name="GetAvailLeaguesBySports"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailLeaguesBySports>
+         <!--type: int-->
+         <web:sportID>3</web:sportID>
+      </web:GetAvailLeaguesBySports>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesBySportsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailSports TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAvailSports"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetAvailSports</con:operation><con:request name="GetAvailSports"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAvailSports/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailSportsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrentGroupOrderID TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrentGroupOrderID"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetCurrentGroupOrderID</con:operation><con:request name="GetCurrentGroupOrderID"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrentGroupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetCurrentGroupOrderID>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetCurrentGroupOrderIDRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetFusballdaten TestCase" searchProperties="true" id="4c6baf57-b354-4548-a41f-0c01c06f5bc6"><con:settings/><con:testStep type="request" name="GetFusballdaten"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetFusballdaten</con:operation><con:request name="GetFusballdaten"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetFusballdaten>
+         <!--type: int-->
+         <web:Spieltag>3</web:Spieltag>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Liga>gero et</web:Liga>
+         <!--type: int-->
+         <web:Saison>3</web:Saison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Userkennung>sonoras imperio</web:Userkennung>
+      </web:GetFusballdaten>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetFusballdatenRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetLastMatch TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetLastMatch"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetLastMatch</con:operation><con:request name="GetLastMatch"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetLastMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetLastMatch>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetLastMatchRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchByMatchID TestCase" searchProperties="true" id="6b29117f-57eb-4eae-9410-84acc0f1bd8d"><con:settings/><con:testStep type="request" name="GetMatchByMatchID"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetMatchByMatchID</con:operation><con:request name="GetMatchByMatchID"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchByMatchID>
+         <!--type: int-->
+         <web:MatchID>1103</web:MatchID>
+      </web:GetMatchByMatchID>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchByMatchIDRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByGroupLeagueSaison TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByGroupLeagueSaison"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetMatchdataByGroupLeagueSaison</con:operation><con:request name="GetMatchdataByGroupLeagueSaison"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByGroupLeagueSaison>
+         <!--type: int-->
+         <web:groupOrderID>24</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>bl1</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>2008</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaison>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByGroupLeagueSaisonJSON TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByGroupLeagueSaisonJSON"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetMatchdataByGroupLeagueSaisonJSON</con:operation><con:request name="GetMatchdataByGroupLeagueSaisonJSON"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByGroupLeagueSaisonJSON>
+         <!--type: int-->
+         <web:groupOrderID>3</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaisonJSON>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonJSONRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByLeagueDateTime TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByLeagueDateTime"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetMatchdataByLeagueDateTime</con:operation><con:request name="GetMatchdataByLeagueDateTime"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByLeagueDateTime>
+         <!--type: dateTime-->
+         <web:fromDateTime>2008-09-29T03:49:45</web:fromDateTime>
+         <!--type: dateTime-->
+         <web:toDateTime>2014-09-19T01:18:33</web:toDateTime>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>verrantque per auras</web:leagueShortcut>
+      </web:GetMatchdataByLeagueDateTime>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueDateTimeRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByLeagueSaison TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByLeagueSaison"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetMatchdataByLeagueSaison</con:operation><con:request name="GetMatchdataByLeagueSaison"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByLeagueSaison>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueSaisonRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByTeams TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByTeams"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetMatchdataByTeams</con:operation><con:request name="GetMatchdataByTeams"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetMatchdataByTeams>
+         <!--type: int-->
+         <web:teamID1>3</web:teamID1>
+         <!--type: int-->
+         <web:teamID2>3</web:teamID2>
+      </web:GetMatchdataByTeams>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByTeamsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetNextMatch TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetNextMatch"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetNextMatch</con:operation><con:request name="GetNextMatch"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetNextMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetNextMatch>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetNextMatchRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetTeamsByLeagueSaison TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetTeamsByLeagueSaison"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap</con:interface><con:operation>GetTeamsByLeagueSaison</con:operation><con:request name="GetTeamsByLeagueSaison"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetTeamsByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetTeamsByLeagueSaison>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetTeamsByLeagueSaisonRequest" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="SportsdataSoap12 TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailGroups TestCase" searchProperties="true" id="2b0b5eff-f1ec-4343-b6a5-3ffb15a53814"><con:settings/><con:testStep type="request" name="GetAvailGroups"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetAvailGroups</con:operation><con:request name="GetAvailGroups"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailGroups>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetAvailGroups>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailGroupsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailLeagues TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAvailLeagues"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetAvailLeagues</con:operation><con:request name="GetAvailLeagues"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailLeagues/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailLeaguesBySports TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAvailLeaguesBySports"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetAvailLeaguesBySports</con:operation><con:request name="GetAvailLeaguesBySports"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailLeaguesBySports>
+         <!--type: int-->
+         <web:sportID>3</web:sportID>
+      </web:GetAvailLeaguesBySports>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailLeaguesBySportsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetAvailSports TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAvailSports"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetAvailSports</con:operation><con:request name="GetAvailSports"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetAvailSports/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetAvailSportsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrentGroupOrderID TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrentGroupOrderID"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetCurrentGroupOrderID</con:operation><con:request name="GetCurrentGroupOrderID"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrentGroupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetCurrentGroupOrderID>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetCurrentGroupOrderIDRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetFusballdaten TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetFusballdaten"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetFusballdaten</con:operation><con:request name="GetFusballdaten"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetFusballdaten>
+         <!--type: int-->
+         <web:Spieltag>3</web:Spieltag>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Liga>gero et</web:Liga>
+         <!--type: int-->
+         <web:Saison>3</web:Saison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:Userkennung>sonoras imperio</web:Userkennung>
+      </web:GetFusballdaten>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetFusballdatenRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetLastMatch TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetLastMatch"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetLastMatch</con:operation><con:request name="GetLastMatch"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetLastMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetLastMatch>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetLastMatchRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchByMatchID TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchByMatchID"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetMatchByMatchID</con:operation><con:request name="GetMatchByMatchID"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchByMatchID>
+         <!--type: int-->
+         <web:MatchID>3</web:MatchID>
+      </web:GetMatchByMatchID>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchByMatchIDRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByGroupLeagueSaison TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByGroupLeagueSaison"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetMatchdataByGroupLeagueSaison</con:operation><con:request name="GetMatchdataByGroupLeagueSaison"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByGroupLeagueSaison>
+         <!--type: int-->
+         <web:groupOrderID>3</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaison>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByGroupLeagueSaisonJSON TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByGroupLeagueSaisonJSON"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetMatchdataByGroupLeagueSaisonJSON</con:operation><con:request name="GetMatchdataByGroupLeagueSaisonJSON"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByGroupLeagueSaisonJSON>
+         <!--type: int-->
+         <web:groupOrderID>3</web:groupOrderID>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByGroupLeagueSaisonJSON>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByGroupLeagueSaisonJSONRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByLeagueDateTime TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByLeagueDateTime"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetMatchdataByLeagueDateTime</con:operation><con:request name="GetMatchdataByLeagueDateTime"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByLeagueDateTime>
+         <!--type: dateTime-->
+         <web:fromDateTime>2008-09-29T03:49:45</web:fromDateTime>
+         <!--type: dateTime-->
+         <web:toDateTime>2014-09-19T01:18:33</web:toDateTime>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>verrantque per auras</web:leagueShortcut>
+      </web:GetMatchdataByLeagueDateTime>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueDateTimeRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByLeagueSaison TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByLeagueSaison"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetMatchdataByLeagueSaison</con:operation><con:request name="GetMatchdataByLeagueSaison"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetMatchdataByLeagueSaison>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByLeagueSaisonRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetMatchdataByTeams TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetMatchdataByTeams"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetMatchdataByTeams</con:operation><con:request name="GetMatchdataByTeams"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetMatchdataByTeams>
+         <!--type: int-->
+         <web:teamID1>3</web:teamID1>
+         <!--type: int-->
+         <web:teamID2>3</web:teamID2>
+      </web:GetMatchdataByTeams>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetMatchdataByTeamsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetNextMatch TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetNextMatch"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetNextMatch</con:operation><con:request name="GetNextMatch"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetNextMatch>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+      </web:GetNextMatch>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetNextMatchRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetTeamsByLeagueSaison TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetTeamsByLeagueSaison"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SportsdataSoap12</con:interface><con:operation>GetTeamsByLeagueSaison</con:operation><con:request name="GetTeamsByLeagueSaison"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.openligadb.de/Webservices/Sportsdata.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://msiggi.de/Sportsdata/Webservices">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetTeamsByLeagueSaison>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueShortcut>gero et</web:leagueShortcut>
+         <!--Optional:-->
+         <!--type: string-->
+         <web:leagueSaison>sonoras imperio</web:leagueSaison>
+      </web:GetTeamsByLeagueSaison>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig action="http://msiggi.de/Sportsdata/Webservices/SportsdataSoap/GetTeamsByLeagueSaisonRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/></con:soapui-project>
