@@ -23,8 +23,8 @@ public class GroovyOLImporter implements IOLImporter {
 
     static{
 		println("trying to create GroovyOLImporter")
-		openLigaDB.create()
-		println("GroovyOLImporter created")
+		openLigaDB.initialize()
+		println("GroovyOLImporter created: " + openLigaDB)
     }
     
     public GroovyOLImporter(){
@@ -32,6 +32,7 @@ public class GroovyOLImporter implements IOLImporter {
     
     public Map<String, String> getOLDetails(int oLId){
 		def matchData = openLigaDB.GetMatchByMatchID(oLId)
+		println("matchData for id: [" + oLId + "]: " + matchData)
 		
 		Map<String, String> values = new HashMap<String, String>()
 		
@@ -52,7 +53,7 @@ public class GroovyOLImporter implements IOLImporter {
 
 		def oLMatchday = openLigaDB.GetMatchdataByGroupLeagueSaison(oLMatchDayId, leagueShort, season)
 		for (oLMatchdata in oLMatchday.matchdata){
-//		        println "id: ${oLMatchdata.matchID}; ${oLMatchdata.nameTeam1} (${oLMatchdata.idTeam1}) - ${oLMatchdata.nameTeam2} (${oLMatchdata.idTeam1}): ${oLMatchdata.pointsTeam1} - ${oLMatchdata.pointsTeam2}"
+		        println "id: ${oLMatchdata.matchID}; ${oLMatchdata.nameTeam1} (${oLMatchdata.idTeam1}) - ${oLMatchdata.nameTeam2} (${oLMatchdata.idTeam1}): ${oLMatchdata.pointsTeam1} - ${oLMatchdata.pointsTeam2}"
 		        IMediator mediator = new GroovyOLMediator();
 		        Match match = mediator.createMatch(oLMatchdata);
 		        matches.add(match);

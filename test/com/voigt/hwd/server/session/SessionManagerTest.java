@@ -8,8 +8,8 @@ import com.voigt.hwd.client.session.LoginStatus;
 
 public class SessionManagerTest {
 
-	private static final String VALID_PASSWD = "foo";
-	private static final String VALID_USER = "bla";
+	private static final String VALID_USER = "micha";
+	private static final String VALID_PASSWD = "password";
 
 	@Test
 	public void testValidLogin() {

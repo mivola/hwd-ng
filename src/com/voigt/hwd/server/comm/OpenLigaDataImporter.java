@@ -1,8 +1,5 @@
 package com.voigt.hwd.server.comm;
 
-import groovy.lang.GroovyClassLoader;
-import groovy.lang.GroovyObject;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -11,11 +8,13 @@ import java.util.Set;
 import org.codehaus.groovy.control.CompilationFailedException;
 
 import com.allen_sauer.gwt.log.client.Log;
-import com.voigt.hwd.comm.CommTester;
 import com.voigt.hwd.domain.League;
 import com.voigt.hwd.domain.Match;
 import com.voigt.hwd.domain.MatchDay;
 import com.voigt.hwd.domain.Season;
+
+import groovy.lang.GroovyClassLoader;
+import groovy.lang.GroovyObject;
 
 public class OpenLigaDataImporter implements IDataImporter {
 
@@ -26,7 +25,7 @@ public class OpenLigaDataImporter implements IDataImporter {
 		try {
 
 			if (oLImporter == null) {
-				ClassLoader parent = CommTester.class.getClassLoader();
+				ClassLoader parent = OpenLigaDataImporter.class.getClassLoader();
 				GroovyClassLoader loader = new GroovyClassLoader(parent);
 				Class<?> gImporter = loader.loadClass("com.voigt.hwd.server.comm.GroovyOLImporter");
 				GroovyObject goImporter = (GroovyObject) gImporter.newInstance();

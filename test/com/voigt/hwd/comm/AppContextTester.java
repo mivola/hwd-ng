@@ -33,7 +33,7 @@ public class AppContextTester {
 		assertNotNull(users);
 		System.out.println(users);
 
-		User user = userDao.searchUserByLogin("micha");
+		User user = userDao.searchUserByLogin("micha11");
 		assertNotNull(user);
 		assertEquals("michael11", user.getFirstName());
 

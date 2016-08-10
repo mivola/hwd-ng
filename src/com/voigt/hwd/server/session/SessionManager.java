@@ -36,10 +36,6 @@ public class SessionManager {
 
 		LoginStatus loginStatus = new LoginStatus(userName);
 
-		// create a hash for a new user
-		// String newPasswordHash = BCrypt.hashpw(password, BCrypt.gensalt());
-
-		// check if user/passwordHash is correct
 		boolean passwordCorrect = false;
 		try {
 			GwtApplicationContext.getInstance().getIdentificationService().authenticate(userName, password);
@@ -49,17 +45,11 @@ public class SessionManager {
 			passwordCorrect = false;
 		}
 
-		// TODO: remove this line
-		// passwordCorrect = true;
-
 		if (passwordCorrect) {
-			// password is correct
-			// create sessionID
 			UUID sessionId = UUID.randomUUID();
 			loginStatus.setSessonId(sessionId.toString());
 			LOGINS.put(userName, loginStatus);
 		} else {
-			// password is incorrect
 			loginStatus.setLoggedIn(false);
 			LOGINS.remove(userName);
 		}
